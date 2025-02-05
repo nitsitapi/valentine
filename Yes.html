@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="valentine">
+    <title>Makaya's Valentine</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <img src="./images/assets/cat2.gif"class="cat1">
+    <h1>I knew it, Yay!!!!</h1>
+
+    <audio id="bgMusic">
+        <source src="standByMe.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById("bgMusic");
+            audio.currentTime = 40;
+            audio.play().catch(error => console.log("Autoplay blocked, user must interact first."));
+        };
+    </script>
+</body>
+</html>

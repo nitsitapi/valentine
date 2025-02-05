@@ -1,0 +1,30 @@
+body {
+    background-color: #ffe8e8;
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+}
+
+.buttonFlex {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Adds space between h1 and buttons */
+}
+
+button {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cat1 {
+    position: relative;
+}
