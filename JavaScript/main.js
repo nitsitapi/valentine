@@ -10,8 +10,8 @@ window.onload = function() {
         clickCount++; // Increase count on each click
 
         // Make YES button bigger
-        let newSize = 34 + clickCount * 5; // Increase font size dynamically
-        let newPadding = 25 + clickCount * 3; // Increase padding dynamically
+        let newSize = 24 + clickCount * 5; // Increase font size dynamically
+        let newPadding = 15 + clickCount * 3; // Increase padding dynamically
         yesButton.style.fontSize = `${newSize}px`;
         yesButton.style.padding = `${newPadding}px ${newPadding * 2}px`;
 
@@ -29,5 +29,17 @@ window.onload = function() {
             noButton.style.cursor = "not-allowed";
         }
     });
+
+    // Make the NO button move when hovered over
+    noButton.addEventListener("mouseover", function() {
+        if (!noButton.disabled) { // Only move if it's still active
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 50);
+            noButton.style.position = "absolute";
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        }
+    });
 };
+
 
