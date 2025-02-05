@@ -30,16 +30,6 @@ window.onload = function() {
         }
     });
 
-    // Make the NO button move when hovered over
-    noButton.addEventListener("mouseover", function() {
-        if (!noButton.disabled) { // Only move if it's still active
-            const x = Math.random() * (window.innerWidth - 100);
-            const y = Math.random() * (window.innerHeight - 50);
-            noButton.style.position = "absolute";
-            noButton.style.left = `${x}px`;
-            noButton.style.top = `${y}px`;
-        }
-    });
 };
 
 
